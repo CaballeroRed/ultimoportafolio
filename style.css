@@ -1,0 +1,398 @@
+:root {
+    --blanco: #ffffff;
+    --primarioc: #47597e;
+    --secundaosc: #1f2641;
+    --tercerocel: #d3e9fe;
+    --cuartoverd: #6fc487;
+    --quinto: #fad797;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+
+
+}
+
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    background-image: linear-gradient(to bottom, #ffffff 10%, #000000 100%);
+    color: var(--secundaosc)
+}
+
+
+
+
+/* para trabajar con rem*/
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    font-weight: 200;
+    margin-left: 220px;
+
+
+}
+
+h1 span {
+    display: flex;
+
+    font-size: 2rem;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 6rem;
+    color: #6fc487;
+
+}
+
+
+
+.naveg-backcolor {
+    background-color: #233b4b;
+}
+
+/*
+.bloque {
+    max-width: 100rem;
+    margin: 0 auto;
+   }   /* es para que se muestre en en todo su ancho*/
+
+
+.nav-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    text-transform: uppercase;
+    height: 120px;
+
+
+
+
+
+}
+
+.nav-principal a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-principal a:hover {
+    color: #aaff78;
+    font-size: 25px;
+
+}
+
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-size: cover;
+
+    }
+}
+
+.contenido-img h2 {
+    color: white;
+    font-weight: 200;
+    font-size: 50px;
+    padding: 10px;
+
+}
+
+.sombra {
+    -webkit-box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+
+.contenido-img p {
+    color: white;
+    font-weight: 300;
+    line-height: 2;
+    font-size: 20px;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    .imagen .contenido-img {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-size: cover;
+
+
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido-img p {
+        padding: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .trabajos .experiencia {
+        margin-left: 0;
+        width: 400px;
+
+    }
+}
+
+
+
+
+
+
+
+
+.imagen {
+    background-image: url(Full\ Stack\ Developer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    height: 500px;
+    position: relative;
+
+}
+
+.contenido-img {
+    position: absolute;
+    background-color: rgb(0, 0, 0, .8);
+    background: rgb(0 0 0 / 80%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fotoperfil {
+
+    height: 150px;
+    width: 150px;
+    background-image: url(fotoperfilpeque.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid var(--cuartoverd);
+    position: relative;
+    margin-bottom: 5px;
+
+
+}
+
+@media (min-width: 768px) {
+    .bloquecentral {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        /*fracciona  en columnas */
+        column-gap: 10px;
+    }
+}
+
+.bloqueindividual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloqueindividual h3 {
+    color: var(--secundaosc);
+    font-weight: 700;
+}
+
+.bloqueindividual p {
+    line-height: 2;
+    color: blanchedalmond;
+    text-transform: lowercase;
+}
+
+
+.bloqueindividual .iconos {
+
+    height: 40rem;
+    width: 40rem;
+    background-image: linear-gradient(to bottom, #221a25 15%, #233b4b 40%);
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border: solid 10px yellow;
+
+    /*alinea verticalmente*/
+}
+
+
+
+.contacto {
+    margin-top: 20rem;
+    text-align: center;
+    color: var(--tercerocel);
+    border: none;
+
+
+}
+
+.formulario {
+    background-image: linear-gradient(to bottom, #1d3442 0%, var(--blanco) 100%);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 6px 13px 0px rgba(0, 0, 0, 0.75);
+    /*sombras*/
+}
+
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    color: var(--tercerocel);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+
+}
+
+.campos-formulario {
+    text-align: start;
+}
+
+.campo {
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+
+
+}
+
+.campo label {
+    color: var(--tercerocel);
+    margin-left: 30px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: block;
+    margin-right: 60px;
+
+}
+
+
+textarea {
+    margin-left: 30px;
+}
+
+.campo input {
+    width: 80%;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.botonenviar {
+    background-color: var(--cuartoverd);
+    color: #1f2641;
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    border: none;
+    margin-left: 30px;
+
+}
+
+.botonenviar:hover {
+    cursor: pointer;
+    transform: scale(105%);
+    font-weight: bold;
+}
+
+.trabajos {
+    padding: 60px;
+
+}
+
+.experiencia {
+    background-image: url(encriptadoralura.png);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    width: 750px;
+    margin-top: 30px;
+    margin-left: 200px;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.experiencia h3 {
+    position: absolute;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+.experiencia p {
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 180px;
+    background-color: #47597e;
+    color: var(--blanco);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.contacto {
+    color: #bff79f;
+
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 100px;
+    margin-top: 5rem;
+
+
+}
+
+.footer p {
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+
+}
